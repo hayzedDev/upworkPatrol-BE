@@ -4,7 +4,6 @@ import * as TelegramBot from 'node-telegram-bot-api';
 import { ConfigService } from '@nestjs/config/dist';
 import { config } from 'dotenv';
 config();
-console.log(process.env.BOT_TOKEN);
 const bot = new TelegramBot(process.env.BOT_TOKEN, {});
 
 @Injectable()
