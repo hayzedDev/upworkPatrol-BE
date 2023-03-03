@@ -8,7 +8,7 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, {});
 
 @Injectable()
 export class NotificationService {
-  constructor(private configService: ConfigService) {}
+  // constructor(private configService: ConfigService) {}
 
   async sendTelegramNotification(dto: CreateNotificationDto) {
     console.log(dto.telegramId);
