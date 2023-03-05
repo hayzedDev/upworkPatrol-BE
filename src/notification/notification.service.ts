@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateNotificationDto } from './dto/create-notification.dto';
 import * as TelegramBot from 'node-telegram-bot-api';
-import { ConfigService } from '@nestjs/config/dist';
 import { config } from 'dotenv';
 config();
 const bot = new TelegramBot(process.env.BOT_TOKEN, {});
