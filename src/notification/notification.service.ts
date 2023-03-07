@@ -9,6 +9,11 @@ const bot = new TelegramBot(process.env.BOT_TOKEN, {});
 export class NotificationService {
   // constructor(private configService: ConfigService) {}
 
+  /**
+   *
+   * @param dto
+   * @returns null
+   */
   async sendTelegramNotification(dto: CreateNotificationDto) {
     console.log(dto.telegramId);
     return await bot.sendMessage(dto.telegramId, 'Received your message');
