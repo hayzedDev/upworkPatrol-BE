@@ -10,7 +10,7 @@ export class NotificationService {
   // constructor(private configService: ConfigService) {}
 
   /**
-   * This method takes in a dto {}
+   * This method takes in a dto {telegramId}
    * @param dto
    * @returns null
    */
